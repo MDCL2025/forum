@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro de Discusión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Foro de Discusión</h1>
+        <p>Comparte tus ideas y sube imágenes sobre cualquier tema.</p>
+    </header>
+
+    <main>
+        <!-- Formulario para publicar -->
+        <section id="post-form">
+            <h2>Publicar en el Foro</h2>
+            <form id="forum-form">
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label for="image">Subir imagen:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+
+                <button type="submit">Publicar</button>
+            </form>
+        </section>
+
+        <!-- Publicaciones del foro -->
+        <section id="forum-posts">
+            <h2>Publicaciones Recientes</h2>
+            <div id="posts-container">
+                <!-- Las publicaciones se agregarán aquí dinámicamente -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Foro de Discusión. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
